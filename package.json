@@ -1,0 +1,22 @@
+{
+  "name": "like-ruby",
+  "version": "1.0.0",
+  "description": "Let js grammar more like ruby",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhongsheng/like-ruby.git"
+  },
+  "keywords": [
+    "ruby"
+  ],
+  "author": "zhongsheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhongsheng/like-ruby/issues"
+  },
+  "homepage": "https://github.com/zhongsheng/like-ruby#readme"
+}
