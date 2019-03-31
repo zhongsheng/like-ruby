@@ -1,6 +1,6 @@
 {
   "name": "like-ruby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Let js grammar more like ruby",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "ruby"
   ],
-  "author": "zhongsheng",
+  "author": "zhong sheng",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zhongsheng/like-ruby/issues"
