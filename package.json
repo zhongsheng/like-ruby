@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zhongsheng/like-ruby/issues"
   },
-  "homepage": "https://github.com/zhongsheng/like-ruby#readme"
+  "homepage": "https://github.com/zhongsheng/like-ruby#readme",
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
 }
