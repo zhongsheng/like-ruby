@@ -1,6 +1,4 @@
-require('../index.js')
-var expect = require('chai').expect
-
+var expect = chai.expect;
 describe('index test', function(){
     var ary = [1,2,3,5,7]
     var obj = {name: 'Jon', phone: '123'}

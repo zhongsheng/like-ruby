@@ -1,3 +1,9 @@
+if((typeof window)=='undefined'){
+    var thisGlobal = global
+}else{
+    var thisGlobal = window
+}
+
 String.prototype.to_i = function(){
     return parseInt(this)
 }
@@ -79,7 +85,7 @@ Array.prototype.chunk = function(func){
     return ary
 }
 
-global.even = function(arg,arg_c){
+thisGlobal.even = function(arg,arg_c){
     if(typeof arg_c == 'number' ){
        return arg%2 - arg_c%2
     }
@@ -90,7 +96,7 @@ global.even = function(arg,arg_c){
     }
 }
 
-global.odd = function(arg){
+thisGlobal.odd = function(arg){
     if(arg%2 == 0){
         return 0
     }else{
@@ -98,6 +104,6 @@ global.odd = function(arg){
     }
 }
 
-global.pp = function(arg){
+thisGlobal.pp = function(arg){
     console.log(arg)
 }
