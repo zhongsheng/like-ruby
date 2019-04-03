@@ -50,5 +50,12 @@ describe('index test', function(){
         expect( ary.chunk(even).size() ).to.be.equal(5)
         expect( ary.sort(even).chunk(even).size() ).to.be.equal(2)
     })
+    it('Regexp has match', function(){
+        let reg = /(hello)\sworld/
+        let str = 'hello world'
+        expect( str.match(/(hello)/)[1] ).to.be.equal('hello')
+        expect( reg.match('hello world', x => { return x[0]}) ).to.be.equal('hello world')
+        expect( reg.match('hello world', x => { if(x){pp(x)} ;return x[1]}) ).to.be.equal('hello')
+    })
 
 })

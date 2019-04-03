@@ -49,4 +49,9 @@ describe('index test', function(){
         expect( ary.sort(even).chunk(even).size() ).to.be.equal(2)
     })
 
+    it('Regexp has match', function(){
+        let reg = /hello/
+        expect( reg.match('hello world', x => {return x[1]}) ).to.be.equal('hello')
+    })
+
 })
