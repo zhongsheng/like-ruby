@@ -58,4 +58,23 @@ describe('index test', function(){
         expect( reg.match('hello world', x => { if(x){pp(x)} ;return x[1]}) ).to.be.equal('hello')
     })
 
+    it('String upcase and downcase', function(){
+        let str = 'Hello world'
+        expect( str.upcase() ).to.be.equal('HELLO WORLD')
+        expect( str.downcase() ).to.be.equal('hello world')
+    })
+    it('String gsub', function(){
+        let str = 'Hello world'
+        expect( str.gsub(/[aeiou]/g, 'v') ).to.be.equal('Hvllv wvrld')
+    })
+    it('String scan', function(){
+        let str = 'cruel world'
+        expect( str.scan(/\w+/).to_s() ).to.be.equal('cruel,world')
+    })
+
+    it('String scan with block', function(){
+        let str = 'cruel world'
+        let scaned_str = [["cr", "ue"], ["l ", "wo"]].to_s().upcase()
+        expect( str.scan(/(..)(..)/, (x,y) => { return [x.upcase(),y.upcase()];}).to_s() ).to.be.equal(scaned_str)
+    })
 })
