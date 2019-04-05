@@ -30,3 +30,10 @@ thisGlobal.odd = function(arg){
 thisGlobal.pp = function(arg){
     return console.log(arg)
 }
+
+thisGlobal.defined = function(arg){
+    if(typeof arg == 'undefined'){
+        return false
+    }
+    return true
+}
